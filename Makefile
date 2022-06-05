@@ -38,6 +38,7 @@ lint:  ## Lint code with flake8
 	flake8 $(PROJECT_NAME)
 
 migrate:  ## Migrate database to the latest version
+	python3 manage.py makemigrations
 	python3 manage.py migrate
 
 mypy:  ## Check types with mypy
